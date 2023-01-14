@@ -1,35 +1,132 @@
-.image{
-    position: relative;
-    width: 400px;
-}
-.image__img{
-    display: block;
-    width: 100%;
-}
-.image__overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    color: white;
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+body {
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity 0.5s;
+    font-size: 17px;
+    font-family: "Quicksand", sans-serif;
 }
-.image__overlay:hover {
-    opacity: 1;
+.navbar{
+    width: 100%;
+    height: 65px;
+    position: fixed;
+    text-align: center;
+    line-height: 65px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;  */
 }
-.image__title{
-    font-size: 2em;
-    font-weight: bold;
+.logo-and-free{
+    float: left;
+    width: auto;
+    height: 65px;
+    display: flex;
+    flex-direction: row;
 }
-.image__description{
-    font-size: 1.25em;
-    margin-top: 0.25em;
+.logo{
+    float: left;
+    width: 33%;
+    padding: 10px;
+    padding-bottom: 0;
+}
+.img-logo{
+    height: 49px;
+}
+.img-logo:hover{
+    background: rgb(29 , 29, 29);
+    border-radius: 10px;
+}
+.free{
+    width: 67%;
+    font-size: 2rem;
+}
+.free a{
+    text-decoration: none;
+    color: rgb(4, 229, 245);
+}
+.free a:hover{
+    color: rgb(247, 13, 5);
+}
+.main-list{
+    float: right;
+}
+.main-list ul{
+    width: 100%;
+    display: flex;
+    list-style: none;
+    padding-right: 10px;
+    margin: 0;
+    padding: 0;
+}
+.main-list ul li{
+    padding-right: 10px;
+}
+.main-list ul li a{
+    color: rgb(247, 13, 5);
+    text-decoration: none;
+    padding-right: 20px;
+    font-size: 2rem;
+}
+.main-list ul li a:hover{
+    color: rgb(4, 229, 245);
+}
+/* .scroll-effect {
+    padding: 0;
+    background-color: rgb(29, 29, 29);
+} */
+.top-background{
+    width: 100%;
+    height: 83vh;
+    background-image: url(images/Background.jpg);
+    background-position: top center;
+    background-size: cover;
+}
+.mid-container{
+    width: 100%;
+    height: 450px;
+    background-color: blue;
+    display: flex;
+    flex-direction: row;
+}
+.mid-left-container, .mid-right-container{
+    height: inherit;
+    width: 33.33%;
+    background-color: aqua;
+}
+.mid-center-container{
+    height: inherit;
+    width: 33.34%;
+    background-color: yellow;
+}
+.footer{
+    width: 100%;
+    height: 220px;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: row;
+}
+.footer-far-left{
+    height: inherit;
+    width: 25%;
+    background-color: antiquewhite;
+}
+.footer-mid-left{
+    height: inherit;
+    width: 25%;
+    background-color: rgb(255, 145, 0);
+}
+.footer-mid-right{
+    height: inherit;
+    width: 25%;
+    background-color: rgb(56, 32, 0);
+}
+.footer-far-right{
+    height: inherit;
+    width: 25%;
+    background-color: rgb(255, 145, 0);
+}
+#first-link{
+    padding-left: 20px;
 }
