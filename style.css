@@ -6,6 +6,7 @@ body {
     flex-direction: column;
     font-size: 17px;
     font-family: "Quicksand", sans-serif;
+    background-color: antiquewhite;
 }
 .navbar{
     width: 100%;
@@ -35,7 +36,7 @@ body {
     height: 49px;
 }
 .img-logo:hover{
-    background: rgb(29 , 29, 29);
+    background: rgb(29, 29, 29);
     border-radius: 10px;
 }
 .free{
@@ -45,9 +46,11 @@ body {
 .free a{
     text-decoration: none;
     color: rgb(4, 229, 245);
+    text-shadow: 1px 1px 1px rgb(4, 229, 245);
 }
 .free a:hover{
     color: rgb(247, 13, 5);
+    text-shadow: 1px 1px 1px rgb(247, 13, 5)
 }
 .main-list{
     float: right;
@@ -79,7 +82,7 @@ body {
 .top-background{
     width: 100%;
     height: 83vh;
-    background-image: url(images/Background.jpg);
+    background-image: url(images/background.jpg);
     background-position: top center;
     background-size: cover;
 }
@@ -106,7 +109,7 @@ body {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.8);
-    color: white;
+    color: antiquewhite;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -128,34 +131,236 @@ body {
     margin-top: 0.25em;
     text-align: center;
 }
-
 .footer{
     width: 100%;
     height: 220px;
-    background-color: blueviolet;
     display: flex;
     flex-direction: row;
-}
-.footer-far-left{
-    height: inherit;
-    width: 25%;
     background-color: antiquewhite;
 }
-.footer-mid-left{
+.footer-far-left, .footer-mid-left, .footer-mid-right, .footer-far-right{
     height: inherit;
     width: 25%;
-    background-color: rgb(255, 145, 0);
 }
-.footer-mid-right{
-    height: inherit;
-    width: 25%;
-    background-color: rgb(56, 32, 0);
+.qm-footer-container{
+    padding-top: 10px;
 }
-.footer-far-right{
-    height: inherit;
-    width: 25%;
-    background-color: rgb(255, 145, 0);
+.qm-footer{
+    text-align: center;
+    font-size: 29pt;
+}
+.qm-footer a{
+    text-decoration: none;
+    font-family: 'Permanent Marker', cursive;
+    color: rgb(29, 29, 29);
+}
+.qm-footer a:hover{
+    text-shadow: 1px 1px 1px rgb(29, 29, 29);
+}
+.careers-btn-container{
+    text-align: center;
+}
+.careers-btn{
+    border: 0;
+    background-color: antiquewhite;
+    border-radius: 5px;
+}
+.careers-btn a:hover{
+    background-color: rgb(29, 29, 29);
+    color: antiquewhite;
+}
+.careers-btn-container a{
+    font-size: 13pt;
+    font-family: "Quicksand", sans-serif;
+    color: rgb(29, 29, 29);
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+.footer-navigation-container ul{
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    padding-top: 35px;
+}
+.footer-navigation-container ul li{
+    padding-top: 13px;
+}
+.footer-navigation-container ul li a{
+    text-decoration: none;
+    font-size: 13pt;
+    color: rgb(29, 29, 29);
+}
+.footer-navigation-container ul li a:hover{
+    text-shadow: 1px 1px 2px rgb(29, 29, 29);
+}
+.footer-contact-container{
+    text-align: center;
+    color: rgb(29, 29, 29);
+    padding-top: 35px;
+}
+.footer-address, .footer-email, .footer-phone{
+    padding-top: 20px;
+}
+.fa {
+	font-size: 17pt;
+	color: rgb(29, 29, 29);
+}
+.footer-follow-container{
+    text-align: center;
+    color: rgb(29, 29, 29);
+}
+.footer-icon-container{
+    display: flex;
+    justify-content: center;
+}
+.footer-icon-container a{
+    text-decoration: none;
+}
+.footer-follow-container p{
+    font-size: 2rem;
+}
+.footer-follow-container img{
+    height: 40px;
+}
+.footer-ig, .footer-fb{
+padding: 20px;
+}
+.footer-ig:hover{
+    background-color: rgb(247, 119, 55);
+    border-radius: 4px;
+}
+.footer-fb:hover{
+    background-color: rgb(0, 119, 181);
+	border-radius: 4px;
 }
 #first-link{
     padding-left: 20px;
+}
+.calc-main{
+    width: 100%;
+    min-height: 100vh;
+}
+/* Obrisi */
+.gallery-top{
+    width: 100%;
+    font-size: 29pt;
+    border-bottom: 2px solid rgb(247, 13, 5);
+    color: rgb(29, 29, 29);
+    padding-top: 115px;
+    padding-bottom: 20px;
+    text-indent: 30px;
+}
+.gallery-top p{
+    margin: 0;
+}
+.container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 3%;
+    box-sizing: border-box;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+.gallery img{
+    width: 100%;
+}
+.contact-main{
+    padding-top: 115px;
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: row;
+}
+.contact-left, .contact-mid, .contact-right{
+    width: 33.33%;
+}
+.contact-left{
+    text-align: left;
+}
+.contact-left-container{
+    padding: 50px;
+    margin-top: 30%;
+}
+.contact-left p{
+    font-size: 29pt;
+    margin: 0;
+    margin-bottom: 1.5em;
+}
+.contact-left table{
+    text-align: left;
+    font-size: 17pt;
+}
+.contact-left tr td:first-child{
+    padding-right: 30px;
+}
+.contact-left tr td{
+    padding-top: 30px;
+}
+.contact-mid{
+    text-align: center;
+}
+.contact-mid p{
+    font-size: 29pt;
+    padding: 50px;
+}
+.contact-mid iframe{
+    border-radius: 10px;
+    width: 100%;
+}
+.contact-right-container{
+    width: 80%;
+    margin: 30% auto;
+    padding: 50px;
+    background-color: antiquewhite;
+}
+.input-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.input-row, .input-group{
+    flex-basis: 45%;
+}
+.contact-right-container input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgb(247, 13, 5);
+    outline: none;
+    padding-bottom: 5px;
+    background-color: antiquewhite;
+}
+.contact-right-container textarea{
+    width: 100%;
+    border: 1px solid rgb(247, 13, 5);
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: antiquewhite;
+}
+.contact-right-container label{
+    margin-bottom: 6px;
+    display: block;
+}
+.contact-right-container button{
+    background-color: rgb(4, 229, 245);
+    width: 100px;
+    border: none;
+    outline: none;
+    color: black;
+    height: 35px;
+    border-radius: 30px;
+    margin-top: 20px;
+    box-shadow: 0px 5px 15px 0px rgba(247, 13, 5, 0.3);
+}
+.contact-box p{
+    font-size: 29pt;
+    margin-top: 0;
 }
