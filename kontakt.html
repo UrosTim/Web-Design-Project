@@ -17,7 +17,40 @@
                     </a>
                 </div>
                 <div class="free">
-                    <a href="#">Besplatan cas</a>
+                    <button id="free-btn">Besplatan cas</button>
+                    <div id="free-container" class="free-modal">
+                        <div class="free-content">
+                            <span class="free-close">&times;</span>
+                            <p>Prijavi se!</p>
+                            <form>
+                            <label id="personal-info-label">Licne informacije</label><br>
+                            <label>Ime i prezime:</label>
+                            <input type="text" id="careers-name" placeholder="Petar Petrovic" required>      
+                            <label>Telefon:</label>
+                            <input type="phone" id="careers-phone" placeholder="060/123-4567" required>
+                            <label>Email:</label>
+                            <input type="email" id="careers-email" placeholder="petar@example.com" required>
+                            <label id="personal-info-label">Detalji</label><br>
+                            <label id="level">Nivo:</label>
+                            <select name="level">
+                                <option value="elementary">Osnovna skola</option>
+                                <option value="high">Srednja skola</option>
+                                <option value="university">Fakultet</option>
+                            </select><br>
+                            <label id="type-where">Tip casa:</label>
+                            <select name="type-where">
+                                <option value="live">Uzivo</option>
+                                <option value="online">Online</option>
+                            </select><br>
+                            <label id="type-how">Tip casa:</label>
+                            <select name="type-how">
+                                <option value="private">Privatni cas</option>
+                                <option value="group">Grupni cas</option>
+                            </select><br>
+                            <input type="submit" value="Posalji" id="careers-submit">
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="main-list">
@@ -98,9 +131,32 @@
             </div>
             <div class="careers-footer-container">
                 <div class="careers-btn-container">
-                    <button class="careers-btn">
-                        <a href="#">Postani deo naseg tima</a>
-                    </button>
+                    <button id="careers-btn" class="careers-btn">Postani deo naseg tima</button>
+                    <div id="careers-container" class="careers-modal">
+                        <div class="careers-content">
+                            <span class="careers-close">&times;</span>
+                            <p>Posalji prijavu</p>
+                            <form id="careers-form">
+                                <label id="personal-info-label">Licne informacije</label><br>
+                                <label for="name">Ime i prezime:</label>
+                                <input type="text" id="careers-name" name="name" placeholder="Petar Petrovic" required>      
+                                <label for="address">Adresa:</label>
+                                <input type="text" id="careers-address" name="address" placeholder="Prva ulica br. 12" required>      
+                                <label for="phone">Telefon:</label>
+                                <input type="phone" id="careers-phone" name="phone" placeholder="060/123-4567" required>
+                                <label for="email">Email:</label>
+                                <input type="email" id="careers-email" name="email" placeholder="petar@example.com" required>
+                                <label id="personal-info-label">Obrazovanje</label><br>
+                                <label for="name">Ime ustanove:</label>
+                                <input type="text" id="careers-name" name="name" placeholder="Univerzitet Singidunum, Tehnicki fakultet" required>      
+                                <label for="major">Naziv diplome:</label>
+                                <input type="text" id="careers-major" name="major" placeholder="Diplomirani profesor matematike" required>      
+                                <label for="year">Godina zavrsetka skolovanja:</label>
+                                <input type="number" id="careers-year" name="year" placeholder="2013" required>
+                                <input type="submit" value="Posalji" id="careers-submit">
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

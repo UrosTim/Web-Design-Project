@@ -21,7 +21,7 @@ body {
 }
 .logo-and-free{
     float: left;
-    width: auto;
+    width: 400px;
     height: 65px;
     display: flex;
     flex-direction: row;
@@ -43,12 +43,16 @@ body {
     width: 67%;
     font-size: 2rem;
 }
-.free a{
+.free button{
     text-decoration: none;
     color: rgb(4, 229, 245);
     text-shadow: 1px 1px 1px rgb(4, 229, 245);
+    margin: 0;
+    font-size: 2rem;
+    background-color: inherit;
+    border: none;
 }
-.free a:hover{
+.free button:hover{
     color: rgb(247, 13, 5);
     text-shadow: 1px 1px 1px rgb(247, 13, 5)
 }
@@ -164,14 +168,17 @@ body {
     border: 0;
     background-color: antiquewhite;
     border-radius: 5px;
+    font-style: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    font-family: "Quicksand", sans-serif;
 }
-.careers-btn a:hover{
+.careers-btn:hover{
     background-color: rgb(29, 29, 29);
     color: antiquewhite;
 }
 .careers-btn-container a{
     font-size: 13pt;
-    font-family: "Quicksand", sans-serif;
     color: rgb(29, 29, 29);
     text-decoration: none;
     border-radius: 5px;
@@ -256,7 +263,7 @@ padding: 20px;
 .gallery-top p{
     margin: 0;
 }
-.container{
+.gallery-container{
     width: 100%;
     display: flex;
     align-items: center;
@@ -328,6 +335,7 @@ padding: 20px;
 }
 .input-row, .input-group{
     flex-basis: 45%;
+    font-weight: bold;
 }
 .contact-right-container input{
     width: 100%;
@@ -346,6 +354,7 @@ padding: 20px;
     background-color: antiquewhite;
 }
 .contact-right-container label{
+    font-weight: bold;
     margin-bottom: 6px;
     display: block;
 }
@@ -358,9 +367,166 @@ padding: 20px;
     height: 35px;
     border-radius: 30px;
     margin-top: 20px;
+    cursor: pointer;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+}
+.contact-right-container button:hover{
     box-shadow: 0px 5px 15px 0px rgba(247, 13, 5, 0.3);
 }
 .contact-box p{
     font-size: 29pt;
     margin-top: 0;
+}
+#careers-container {
+    display: none;
+    position: fixed;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: left;
+}
+.careers-content {
+    background-color: antiquewhite;
+    margin: auto;
+    padding: 10px 20px;
+    border: 1px solid rgb(247, 13, 5);
+    border-radius: 10px;
+    width: 25%;
+}
+.careers-close {
+    color: rgb(0, 0, 0);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.careers-content p {
+    font-size: 29pt;
+    font-weight: 400;
+    margin: 30px 0px;
+}
+.careers-close:hover {
+    color: rgb(247, 13, 5);
+    text-decoration: none;
+    cursor: pointer;
+}
+.careers-content label {
+    text-align: left;
+    font-weight: bold;
+}
+.careers-content input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgb(247, 13, 5);
+    outline: none;
+    background-color: antiquewhite;
+    margin: 10px 0px;
+}
+.careers-content input[type="submit"]{
+    background-color: rgb(4, 229, 245);
+    width: 100px;
+    border: none;
+    outline: none;
+    color: black;
+    height: 35px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin: 20px 0px;
+    font-weight: bold;
+    font-family: "Quicksand", sans-serif;
+}
+.careers-content input[type="submit"]:hover{
+    box-shadow: 0px 5px 15px 0px rgba(247, 13, 5, 0.3);
+}
+#personal-info-label{
+    font-size: 17pt;
+    line-height: 50px;
+}
+#free-container {
+    display: none;
+    position: fixed;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: left;
+    font-size: 12pt;
+}
+.free-content {
+    background-color: antiquewhite;
+    margin: auto;
+    padding: 10px 20px;
+    border: 1px solid rgb(247, 13, 5);
+    border-radius: 10px;
+    width: 25%;
+}
+.free-close {
+    color: rgb(0, 0, 0);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.free-content p {
+    font-size: 29pt;
+    font-weight: 400;
+    margin: 30px 0px;
+}
+.free-content form{
+    line-height: normal;
+}
+.free-close:hover {
+    color: rgb(247, 13, 5);
+    text-decoration: none;
+    cursor: pointer;
+}
+.free-content label {
+    font-weight: bold;
+}
+.free-content input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgb(247, 13, 5);
+    outline: none;
+    background-color: antiquewhite;
+    margin: 10px 0px;
+}
+.free-content input[type="submit"]{
+    background-color: rgb(4, 229, 245);
+    width: 100px;
+    border: none;
+    outline: none;
+    color: black;
+    height: 35px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin: 20px 0px;
+    font-weight: bold;
+    font-family: "Quicksand", sans-serif;
+}
+.free-content input[type="submit"]:hover{
+    box-shadow: 0px 5px 15px 0px rgba(247, 13, 5, 0.3);
+}
+#personal-info-label{
+    font-size: 17pt;
+    line-height: 50px;
+}
+#free-btn{
+    border: none;
+    cursor: pointer;
+}
+.free-content select{
+background-color: antiquewhite;
+padding: 5px;
+border: 1px solid rgb(247, 13, 5);
+border-radius: 5px;
+width: 150px;
+font-size: 12pt;
+}
+#level, #type-where, #type-how{
+    line-height: 40px;
 }
