@@ -22,7 +22,7 @@
                         <div class="free-content">
                             <span class="free-close">&times;</span>
                             <p>Prijavi se!</p>
-                            <form>
+                            <form id="free-form">
                             <label id="personal-info-label">Licne informacije</label><br>
                             <label>Ime i prezime:</label>
                             <input type="text" id="careers-name" placeholder="Petar Petrovic" required>      
@@ -64,7 +64,60 @@
         </div>
     </div>
 
-    <div class="calc-main"></div>
+    <div class="calc-main">
+        <div class="calc-container">
+            <div class="lcd-container">
+                <form>
+                    <h3>NZD:</h3>
+                    <p>Odredjuje najveci zajednicki delilac dva broja.</p>
+                    <label>Prvi broj:</label>
+                    <input type="number" id="lcd-first-number">
+                    <br>
+                    <label>Drugi broj:</label>
+                    <input type="number" id="lcd-second-number">
+                    <br>
+                    <button type="button" onclick="calculateGcd()">Odredi</button>
+                </form>
+                <p id="lcd-result"></p>
+            </div>
+            <div class="fraction-container">
+                <form>
+                    <h3>Razlomak -> Decimalni</h3>
+                    <p>Pretvara razlomak u decimalni oblik broja.</p>
+                    <label>Brojilac:</label>
+                    <input type="number" id="numerator" required>
+                    <br>
+                    <label>Imenilac:</label>
+                    <input type="number" id="denominator" required>
+                    <br>
+                    <button type="button" onclick="calculateDecimal()">Odredi</button>
+                </form>
+                <p id="fraction-result"></p>
+            </div>
+            <div class="prime-container">
+                <form>
+                    <h3>Prost broj</h3>
+                    <p>Odredjuje da li je trazeni broj prost ili nije.</p>
+                    <label>Trazeni broj:</label>
+                    <input type="number" id="prime-number">
+                    <br>
+                    <button type="button" onclick="calculatePrime()">Odredi</button>
+                </form>
+                <p id="prime-result"></p>
+            </div>
+            <div class="fib-container">
+                <form>
+                    <h3>Fibonacijev niz</h3>
+                    <p>Racuna trazeni element iz Fibonacijevog niza.</p>
+                    <label>Redni broj u nizu:</label>
+                    <input type="number" id="fib-number">
+                    <br>
+                    <button type="button" onclick="calculateFib()">Odredi</button>  
+                </form>
+                <p id="fib-result"></p>
+            </div>
+            </div>
+    </div>
 
     <div class="footer">
         <div class="footer-far-left">

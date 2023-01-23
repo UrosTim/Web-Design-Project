@@ -246,11 +246,79 @@ padding: 20px;
 #first-link{
     padding-left: 20px;
 }
+
 .calc-main{
     width: 100%;
-    min-height: 100vh;
+    margin: 0;
+    padding: 0;
 }
-/* Obrisi */
+.calc-container{
+    display: flex;
+    padding-top: 120px;
+    margin: 0;
+}
+.calc-container form{
+    padding: 0px 40px;
+}
+.calc-container button{
+margin: 50px 40%;
+background-color: rgb(4, 229, 245);
+width: 100px;
+border: none;
+outline: none;
+color: rgb(29, 29, 29);
+height: 35px;
+border-radius: 30px;
+cursor: pointer;
+font-weight: bold;
+}
+.calc-container button:hover{
+    box-shadow: 0px 5px 15px 0px rgba(247, 13, 5, 0.3);
+}
+.calc-container p{
+    margin: 0;
+}
+#lcd-result, #fraction-result, #prime-result, #fib-result{
+    color: rgb(4, 229, 245);
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+.lcd-container, .fraction-container, .prime-container, .fib-container{
+    width: 25%;
+    min-height: 85vh;
+    border-radius: 20px;
+    border-left: 3px solid rosybrown;
+    border-right: 3px solid rosybrown;
+}
+/* .lcd-container, .fraction-container, .prime-container{
+    border-right: 5px solid rosybrown;
+    border-radius: 20px;
+} */
+.calc-container label{
+    line-height: 50px;
+}
+.calc-container h3{
+    text-align: center;
+    padding: 90px 10px;
+    font-size: 2rem;
+    color: rgb(247, 13, 5);
+    margin: 0;
+}
+.calc-container p{
+    text-align: center;
+    color: rgb(29, 29, 29);
+    font-size: 1.2rem;
+    padding-bottom: 50px;
+}
+.calc-container input{
+    float: right;
+    padding: 5px;
+    margin-top: 10px;
+    background-color: antiquewhite;
+    border: none;
+    border-bottom: 1px solid rgb(247, 13, 5);
+}
+
 .gallery-top{
     width: 100%;
     font-size: 29pt;
@@ -456,6 +524,7 @@ padding: 20px;
     background-color: rgba(0, 0, 0, 0.8);
     text-align: left;
     font-size: 12pt;
+    line-height: normal;
 }
 .free-content {
     background-color: antiquewhite;
@@ -475,9 +544,6 @@ padding: 20px;
     font-size: 29pt;
     font-weight: 400;
     margin: 30px 0px;
-}
-.free-content form{
-    line-height: normal;
 }
 .free-close:hover {
     color: rgb(247, 13, 5);
@@ -529,4 +595,7 @@ font-size: 12pt;
 }
 #level, #type-where, #type-how{
     line-height: 40px;
+}
+.zindex-minus{
+    z-index: -1;
 }

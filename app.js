@@ -19,26 +19,28 @@ var form = document.getElementById("careers-form");
 // When the user clicks the button, open the modal 
 btn.onclick = function() {
 modal.style.display = "block";
+document.getElementById("mid-container-id").style.zIndex = "-1";
 }
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
 modal.style.display = "none";
+document.getElementById("mid-container-id").style.zIndex = "1";
 }
 // When the user clicks anywhere outside of the modal, close it
 window.addEventListener('click', function(event){
     if (event.target == modal) {
         modal.style.display = "none";
+        document.getElementById("mid-container-id").style.zIndex = "1";
     }
 });
-
-// When the user clicks anywhere outside of the modal, close it
 
 // When the user submits the form
 form.addEventListener("submit", function(event1) {
     event1.preventDefault(); // prevent the form from submitting
     alert("Uspesno ste poslali prijavu!"); // print a message
     modal.style.display = "none"; // close the modal
+    document.getElementById("mid-container-id").style.zIndex = "1";
 });
 
 // Get the modal
@@ -51,27 +53,96 @@ var btnFree = document.getElementById("free-btn");
 var spanFree = document.getElementsByClassName("free-close")[0];
 
 // Get the form element
-var formFree = document.querySelector("form");
+var formFree = document.getElementById("free-form");
 
 // When the user clicks the button, open the modal 
 btnFree.onclick = function() {
 modalFree.style.display = "block";
+document.getElementById("mid-container-id").style.zIndex = "-1";
 }
 
 // When the user clicks on <span> (x), close the modal
 spanFree.onclick = function() {
 modalFree.style.display = "none";
+document.getElementById("mid-container-id").style.zIndex = "1";
 }
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-if (event.target == modalFree) {
-    modalFree.style.display = "none";
-}
-}
+window.addEventListener('click', function(event){
+    if(event.target == modalFree){
+        modalFree.style.display = "none";
+        document.getElementById("mid-container-id").style.zIndex = "1";
+    }
+});
+
 // When the user submits the form
-formFree.addEventListener("submit", function(event) {
-    event.preventDefault(); // prevent the form from submitting
+formFree.addEventListener("submit", function(event2) {
+    event2.preventDefault(); // prevent the form from submitting
     alert("Uspesno ste se prijavili. Uskoro cemo vam se javiti sa dostupnim terminima."); // print a message
     modalFree.style.display = "none"; // close the modal
+    document.getElementById("mid-container-id").style.zIndex = "1";
 });
+
+var formContact = document.getElementById("contact-form");
+
+formContact.addEventListener("submit", function(){
+    alert("Vasa poruka je poslata.");
+});
+
+function gcd(a, b) {
+    if (b === 0) {
+        return a;
+    }
+    return gcd(b, a % b);
+}
+function calculateGcd() {
+    var firstNumber = document.getElementById("lcd-first-number").value;
+    var secondNumber = document.getElementById("lcd-second-number").value;
+    var result = gcd(firstNumber, secondNumber);
+    document.getElementById("lcd-result").innerHTML = "Najveci zajednicki delilac je: " + result;
+}
+function fractionToDecimal(numerator, denominator) {
+    return numerator / denominator;
+}
+function calculateDecimal() {
+    var numerator = document.getElementById("numerator").value;
+    var denominator = document.getElementById("denominator").value;
+    var result = fractionToDecimal(numerator, denominator);
+    var resultCap = result.toFixed(2);
+    document.getElementById("fraction-result").innerHTML = "Decimalni oblik: " + resultCap;
+}
+function isPrime(num){
+    if(num < 2){
+        return false;
+    }
+    for(var i = 2; i < num; i++){
+        if(num % i === 0){
+        return false;
+        }
+    }
+    return true;
+}
+function calculatePrime(){
+    var primeNumber = document.getElementById("prime-number").value;
+    var result = isPrime(primeNumber);
+    if(result){
+        document.getElementById("prime-result").innerHTML = "Trazeni broj je prost.";
+    }
+    else{
+        document.getElementById("prime-result").innerHTML = "Trazeni broj nije prost.";
+    }
+}
+function fibonacci(num){
+    if(num <= 0){
+        return 0;
+    } else if(num === 1){
+        return 1;
+    } else{
+        return fibonacci(num - 1) + fibonacci(num - 2);
+    }
+}
+function calculateFib(){
+    var fibNumber = document.getElementById("fib-number").value;
+    var result = fibonacci(fibNumber);
+    document.getElementById("fib-result").innerHTML = "Na trazenoj poziciji u nizu se nalazi broj " + result;
+}

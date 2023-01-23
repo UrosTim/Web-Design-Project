@@ -22,7 +22,7 @@
                         <div class="free-content">
                             <span class="free-close">&times;</span>
                             <p>Prijavi se!</p>
-                            <form>
+                            <form id="free-form">
                             <label id="personal-info-label">Licne informacije</label><br>
                             <label>Ime i prezime:</label>
                             <input type="text" id="careers-name" placeholder="Petar Petrovic" required>      
@@ -94,29 +94,29 @@
             <div class="contact-right-container">
                 <div class="contact-box">
                 <p>Posajite poruku</p>
-                <form>
+                <form id="contact-form">
                     <div class="input-row">
                         <div class="input-group">
                             <label for="name">Ime i prezime</label>
-                            <input type="text" placeholder="Petar Petrovic">
+                            <input type="text" placeholder="Petar Petrovic" required>
                         </div>
                         <div class="input-group">
                             <label for="phone">Telefon</label>
-                            <input type="text" placeholder="060/1234-567">
+                            <input type="text" placeholder="060/1234-567" required>
                         </div>
                     </div>
                     <div class="input-row">
                         <div class="input-group">
                             <label for="email">Email adresa</label>
-                            <input type="email" placeholder="example@gmail.com">
+                            <input type="email" placeholder="example@gmail.com" required>
                         </div>
                         <div class="input-group">
                             <label for="subject">Tema</label>
-                            <input type="text" placeholder="besplatan cas">
+                            <input type="text" placeholder="besplatan cas" required>
                         </div>
                     </div>
                         <label>Poruka</label>
-                        <textarea rows="5" placeholder="Vasa poruka"></textarea>
+                        <textarea rows="5" placeholder="Vasa poruka" required></textarea>
                         <button type="submit">Posalji</button>
                 </form>
             </div>
