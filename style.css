@@ -8,6 +8,7 @@ body {
     font-family: "Quicksand", sans-serif;
     background-color: antiquewhite;
 }
+/* ----------------------------------------------------- */
 .navbar{
     width: 100%;
     height: 65px;
@@ -83,6 +84,10 @@ body {
     padding: 0;
     background-color: rgb(29, 29, 29);
 }
+#first-link{
+    padding-left: 20px;
+}
+/* ----------------------------------------------------- */
 .top-background{
     width: 100%;
     height: 83vh;
@@ -135,6 +140,7 @@ body {
     margin-top: 0.25em;
     text-align: center;
 }
+/* ----------------------------------------------------- */
 .footer{
     width: 100%;
     height: 220px;
@@ -243,10 +249,7 @@ padding: 20px;
     background-color: rgb(0, 119, 181);
 	border-radius: 4px;
 }
-#first-link{
-    padding-left: 20px;
-}
-
+/* ----------------------------------------------------- */
 .calc-main{
     width: 100%;
     margin: 0;
@@ -290,10 +293,6 @@ font-weight: bold;
     border-left: 3px solid rosybrown;
     border-right: 3px solid rosybrown;
 }
-/* .lcd-container, .fraction-container, .prime-container{
-    border-right: 5px solid rosybrown;
-    border-radius: 20px;
-} */
 .calc-container label{
     line-height: 50px;
 }
@@ -318,7 +317,7 @@ font-weight: bold;
     border: none;
     border-bottom: 1px solid rgb(247, 13, 5);
 }
-
+/* ----------------------------------------------------- */
 .gallery-top{
     width: 100%;
     font-size: 29pt;
@@ -347,6 +346,7 @@ font-weight: bold;
 .gallery img{
     width: 100%;
 }
+/* ----------------------------------------------------- */
 .contact-main{
     padding-top: 115px;
     width: 100%;
@@ -446,6 +446,7 @@ font-weight: bold;
     font-size: 29pt;
     margin-top: 0;
 }
+/* ----------------------------------------------------- */
 #careers-container {
     display: none;
     position: fixed;
@@ -509,6 +510,7 @@ font-weight: bold;
 .careers-content input[type="submit"]:hover{
     box-shadow: 0px 5px 15px 0px rgba(247, 13, 5, 0.3);
 }
+/* ----------------------------------------------------- */
 #personal-info-label{
     font-size: 17pt;
     line-height: 50px;
